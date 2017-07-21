@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "755559812061",
+    "project_id": "baeble-music"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755559812061:android:d4ef79ccd98e09e3",
+        "android_client_info": {
+          "package_name": "com.baeble.www.baebleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755559812061-63g5q804vr5gt24j1e41p9i8dap7v0v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXZjz82Q1LCO3amyW6XVh_Y8vbsf5E6ZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-69441414-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

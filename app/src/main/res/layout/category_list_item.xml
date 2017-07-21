@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <com.applidium.shutterbug.FetchableImageView
+        android:id="@+id/img_gridCategoryItem"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:gravity = "center"
+        android:background="@drawable/bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+      android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_height="wrap_content">
+        <com.baeble.www.baebleapp.Custom_TextView
+            android:id="@+id/txt_gridCategoryItem"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+
+
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:text="Newest"
+            android:textColor="#979797"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_height="wrap_content"
+            android:src="@drawable/more"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

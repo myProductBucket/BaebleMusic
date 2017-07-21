@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/img_backSearch"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:background="@drawable/search_field"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_searchSearch"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_marginLeft="5dp"
+
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Search"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:paddingBottom="5dp"
+
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_crossSearch"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_searchSearch"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search"/>
+
+    </LinearLayout>
+    <View
+        android:layout_height="4dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/orange_line"
+        >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#212221">
+       <LinearLayout
+           android:id="@+id/ly_searchMessage"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:background="@android:color/black"
+           android:layout_height="match_parent">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_for_text"/>
+           <com.baeble.www.baebleapp.Custom_TextView
+               android:id="@+id/txt_searchResultMessage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:textColor="#979797"
+               android:text="Discover Your New Favorite Videos\nSearch for bands"
+               android:textSize="22sp"/>
+       </LinearLayout>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:id="@+id/gridView_search" />
+    </RelativeLayout>
+
+</LinearLayout>

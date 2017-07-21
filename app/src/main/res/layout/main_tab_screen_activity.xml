@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#212221"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <com.baeble.www.baebleapp.Custom_TextView
+                android:id="@+id/txt_tabFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sel"
+                android:gravity="center"
+                android:text="NEWEST"
+                android:textColor="#979797"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_seperator"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <com.baeble.www.baebleapp.Custom_TextView
+                android:id="@+id/txt_tabCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/unsel"
+                android:gravity="center"
+                android:text="CATEGORY"
+                android:textColor="#979797"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_seperator"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <com.baeble.www.baebleapp.Custom_TextView
+                android:id="@+id/txt_tabCateroryDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/unsel"
+                android:gravity="center"
+                android:textColor="#979797"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/tabFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212221"/>
+
+
+</LinearLayout>

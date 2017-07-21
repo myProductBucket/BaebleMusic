@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.baeble.www.baebleapp"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 34
+        versionName "1.9.20"
+        multiDexEnabled true
+        manifestPlaceholders = [onesignal_app_id: "7b8179ce-d725-47cf-bf8e-f4f6550adf33",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://mvn.jwplayer.com/content/repositories/releases/'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'jsr305_annotations/Jsr305_annotations.gwt.xml'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/Shutterbug-1.0.0.jar')
+    compile files('libs/kwicr.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+//        compile 'com.google.android.gms:play-services:8.3.0'
+//    compile project(':CastCompanionLibrary-android-master')
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.google.android.gms:play-services-analytics:9.8.0'
+//    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    compile 'com.google.android.gms:play-services-cast:9.8.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:leanback-v17:25.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services-identity:9.8.0'
+    compile 'com.google.android.gms:play-services-plus:9.8.0'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile 'io.branch.sdk.android:library:2.+'
+    compile 'com.google.android.gms:play-services-ads:9.8.0'
+//    compile project(':jwplayer-android-sdk-2.5.1+162')
+    compile 'com.longtailvideo.jwplayer:jwplayer-core:+'
+    compile 'com.longtailvideo.jwplayer:jwplayer-common:+'
+    compile 'com.longtailvideo.jwplayer:jwplayer-ima:+'
+    compile 'com.longtailvideo.jwplayer:jwplayer-chromecast:+'
+
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'com.onesignal:OneSignal:3.+@aar'
+
+    // Required for geotagging
+    compile "com.google.android.gms:play-services-location:9.8.0"
+}
+
+apply plugin: 'com.google.gms.google-services'

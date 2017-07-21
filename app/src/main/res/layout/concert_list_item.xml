@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+    <!--<com.applidium.shutterbug.FetchableImageView-->
+        <!--android:id="@+id/img_gridConcertItem"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="140dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:gravity = "center"-->
+        <!--android:background="@drawable/thumb_size"/>-->
+    <ImageView
+        android:id="@+id/img_gridConcertItem"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:gravity = "center"
+        android:background="@drawable/thumb_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/txt_titleConcertItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Roads 2 Riches "
+                android:textSize="16sp"
+                android:textColor="#ec6d36"
+            />
+            <TextView
+                android:id="@+id/txt_artistConcertItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginBottom="4dp"
+                android:text="K Loren"
+                android:textColor="#979797"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img_gridConcertMoreLayout"
+            android:layout_width="wrap_content"
+            android:layout_weight=".2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/more"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

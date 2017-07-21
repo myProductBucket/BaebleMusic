@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <com.applidium.shutterbug.FetchableImageView
+        android:id="@+id/img_gridFeaturedItem"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:gravity = "center"
+        android:background="@drawable/bg"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <com.baeble.www.baebleapp.Custom_TextView
+            android:id="@+id/txt_gridFeaturedItem"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+            android:textColor="#979797"/>
+
+        <LinearLayout
+            android:id="@+id/img_gridFeaturedMoreLayout"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/img_gridFeaturedMoreIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/more"/>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
